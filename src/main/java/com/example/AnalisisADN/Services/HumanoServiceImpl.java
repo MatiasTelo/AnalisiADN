@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public abstract class HumanoServiceImpl extends BaseServiceImpl<Humano, Long> implements HumanoService{
+public class HumanoServiceImpl extends BaseServiceImpl<Humano, Long> implements HumanoService{
 
     @Autowired
     private HumanoRepository humanoRepository;
