@@ -36,7 +36,7 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
-    @PostMapping("")
+    @PostMapping("/add")
     public ResponseEntity<?> save(@RequestBody E entity){
         try{
             return ResponseEntity.status(HttpStatus.OK).body(servicio.save(entity));
