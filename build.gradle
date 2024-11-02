@@ -24,8 +24,6 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	//JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	// Spring web
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -34,7 +32,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	// H2
 	runtimeOnly 'com.h2database:h2'
-	implementation 'org.postgresql:postgresql'
+
 	// Openapi swagger
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.1.0'
 	// Envers
@@ -48,6 +46,10 @@ dependencies {
 	implementation 'org.json:json:20210307'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
