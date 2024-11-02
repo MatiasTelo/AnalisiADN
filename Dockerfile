@@ -26,7 +26,7 @@ WORKDIR /app
 EXPOSE 8080
 
 # Copiar el archivo JAR generado desde la etapa de compilación
-COPY --from=build /app/build/libs/primer-parcial-0.0.1-SNAPSHOT.jar ./app.jar
+COPY --from=build /app/build/libs/AnalisisADN-0.0.1-SNAPSHOT.jar ./app.jar
 
 # Comando de inicio
 ENTRYPOINT ["java", "-jar", "./app.jar"]
