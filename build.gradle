@@ -34,7 +34,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	// H2
 	runtimeOnly 'com.h2database:h2'
-
+	implementation 'org.postgresql:postgresql'
 	// Openapi swagger
 	implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.1.0'
 	// Envers
