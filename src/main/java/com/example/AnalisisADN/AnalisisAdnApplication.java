@@ -14,7 +14,5 @@ public class AnalisisAdnApplication {
 		SpringApplication.run(AnalisisAdnApplication.class, args);
 	}
 
-	}
-
-
 }
+
