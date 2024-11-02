@@ -1,5 +1,6 @@
 package com.example.AnalisisADN.Services;
 
+import com.example.AnalisisADN.DTOs.HumanoDTO;
 import com.example.AnalisisADN.Entities.Base;
 import com.example.AnalisisADN.Repositories.BaseRepository;
 import com.example.AnalisisADN.Services.BaseService;
@@ -77,4 +78,7 @@ public abstract class BaseServiceImpl<E extends Base, ID extends Serializable> i
             throw new Exception(e.getMessage());
         }
     }
+
+    @Transactional
+    public abstract boolean isMutant(HumanoDTO humanoDTO) throws Exception;
 }

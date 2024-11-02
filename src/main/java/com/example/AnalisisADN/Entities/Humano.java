@@ -16,8 +16,7 @@ import java.util.stream.IntStream;
 @NoArgsConstructor
 @Builder
 public class Humano extends Base{
-    private String nombre;
-    private String apellido;
+
     private String dna;
 
     public void setdna(String[] adnStrArray) {
